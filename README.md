@@ -86,19 +86,3 @@ Run with `mvn test`.
 
 Suggested test-driven progression: account creation → deposit → withdrawal rejection → transfer → history → HTTP validation → concurrency locking. Each stage should be committed separately. This repository contains the final snapshot; do **not** present a fabricated commit history as actual development history.
 
-## Suggested Git commits
-
-1. `chore: bootstrap Spring Boot project and test setup`
-2. `feat: model accounts and add account creation API`
-3. `test: specify deposits and withdrawals including overdrafts`
-4. `feat: implement balance mutations and validation`
-5. `test: specify atomic transfers and paired ledger entries`
-6. `feat: implement transfer transaction and ordered locks`
-7. `feat: expose balance and transaction history endpoints`
-8. `docs: explain design choices, limits, and run instructions`
-
-Only commit these as milestones if the corresponding changes are genuinely made separately. The kata asks for meaningful real Git history, not reconstructed evidence.
-
-## Submission
-
-Create a **private GitHub repository**, push your code, invite GitHub user `tipaneldxc` as a collaborator, and email the repository link to the hiring team. Do not include secrets or credentials in the repository.
